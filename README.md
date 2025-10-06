@@ -34,10 +34,6 @@ We summarize the overall reasoning process of this study in three causal steps:
 
 ---
 
-### 🚀 Run
-
-This repository provides unified training scripts for reproducing all benchmark results across 21 heterogeneous graph datasets and 20 HGNN models.  
-Each model can be executed using the following command format:
 
 ### 🚀 Run
 
@@ -81,3 +77,54 @@ python run.py --feats_type 0 --hidden_dim 64 --num_layers 1 --lr 0.001 --feat_dr
 python run.py --feats_type 0 --hidden_dim 192 --num_layers 1 --lr 0.001 --feat_drop 0.1 --edge_drop 0. --weight_decay 0.0001 --dataset HGB/ACM --vc 0 --batchnorm
 python run.py --feats_type 3 --hidden_dim 64 --num_layers 6 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset HGB/DBLP --vc 0 --use_residual --batchnorm
 
+---
+
+### 🧩 GCN (Homogeneous) Runs
+
+To examine whether HGNNs’ improvements arise from architecture or from heterogeneous information,  
+we also reproduce all models on their **homogeneous graph counterparts** by enabling the `--homo` flag.  
+These runs serve as **control experiments** in our causal analysis, allowing a fair comparison between  
+heterogeneous and homogeneous settings under identical hyperparameter configurations.
+
+You can reproduce the homogeneous baselines with the following commands:
+```bash
+# DMGI
+python run.py --feats_type 0 --hidden_dim 128 --num_layers 3 --lr 0.001 --feat_drop 0.3 --edge_drop 0.05 --weight_decay 0.0001 --dataset DMGI/ACM --vc 50 --homo --use_residual --use_self_gating --batchnorm
+python run.py --feats_type 0 --hidden_dim 256 --num_layers 3 --lr 0.001 --feat_drop 0.2 --edge_drop 0 --weight_decay 0. --dataset DMGI/IMDB --vc 0 --homo --use_residual
+python run.py --feats_type 0 --hidden_dim 512 --num_layers 2 --lr 0.001 --feat_drop 0. --edge_drop 0.7 --weight_decay 0.0001 --dataset DMGI/Amazon --vc 0 --homo --use_residual --batchnorm
+
+# GTN
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 4 --lr 0.001 --feat_drop 0.5 --edge_drop 0 --weight_decay 0.0001 --dataset GTN/ACM --vc 0 --homo --use_residual
+python run.py --feats_type 0 --hidden_dim 128 --num_layers 2 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset GTN/IMDB --vc 0 --homo
+python run.py --feats_type 0 --hidden_dim 128 --num_layers 1 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset GTN/DBLP --vc 5 --homo
+
+# HGSL
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 5 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0.0001 --dataset HGSL/Yelp --vc 0 --homo --use_residual
+python run.py --feats_type 0 --hidden_dim 128 --num_layers 3 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset HGSL/DBLP --vc 0 --homo --use_residual
+
+# HOAE
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 2 --lr 0.001 --feat_drop 0. --edge_drop 0 --weight_decay 0 --dataset HOAE/ACM --vc 0 --homo
+
+# MAGNN
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 7 --lr 0.001 --feat_drop 0. --edge_drop 0 --weight_decay 0. --dataset MAGNN/DBLP --vc 0 --homo --use_residual
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 2 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset MAGNN/IMDB --vc 3 --homo --use_residual --use_self_gating
+
+# MHGCN
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 6 --lr 0.001 --feat_drop 0. --edge_drop 0 --weight_decay 0 --dataset MHGCN/DBLP --vc 0 --homo --use_residual --use_self_gating
+
+# HERO
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 3 --lr 0.01 --feat_drop 0. --edge_drop 0 --weight_decay 0 --dataset HERO/ACM --vc 0 --homo --use_residual
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 7 --lr 0.001 --feat_drop 0. --edge_drop 0 --weight_decay 0. --dataset HERO/DBLP --vc 50 --homo --use_residual
+
+# HetGNN
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 3 --lr 0.001 --feat_drop 0. --edge_drop 0 --weight_decay 0 --dataset HetGNN/Academic2 --vc 0 --homo --use_residual --batchnorm
+
+# HGB
+python run.py --feats_type 0 --hidden_dim 256 --num_layers 1 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0.0001 --dataset HGB/ACM --vc 5 --homo --batchnorm
+python run.py --feats_type 0 --hidden_dim 256 --num_layers 8 --lr 0.001 --feat_drop 0. --edge_drop 0 --weight_decay 0. --dataset HGB/DBLP --vc 0 --homo --use_residual --batchnorm
+
+# AMHGNN
+python run.py --feats_type 0 --hidden_dim 64 --num_layers 3 --lr 0.001 --feat_drop 0. --edge_drop 0.1 --weight_decay 0 --dataset AMHGNN/Yelp --vc 0 --homo --use_residual --use_self_gating
+
+# SAN
+python run.py --feats_type 0 --hidden_dim 1024 --num_layers 6 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset SAN/Alicoco --vc 0 --homo --use_residual
