@@ -14,9 +14,9 @@ Our findings reveal that architectural complexity has **no causal impact** on pe
 ---
 
 ### 🌟 Highlights
-1. 📊 A comprehensive **benchmark for HGNNs** with 21 datasets and 20 baselines  
-2. 🧱 **Model architecture** and complexity show *no causal effect* on performance  
-3. 🔗 **Homophily** and **distribution discrepancy** are the *key causal factors* underlying HGNN effectiveness  
+1.  A comprehensive **benchmark for HGNNs** with 21 datasets and 20 baselines  
+2.  **Model architecture** and complexity show *no causal effect* on performance  
+3.  **Homophily** and **distribution discrepancy** are the *key causal factors* underlying HGNN effectiveness  
 
 ---
 
@@ -125,3 +125,23 @@ python run.py --feats_type 0 --hidden_dim 64 --num_layers 3 --lr 0.001 --feat_dr
 # SAN
 python run.py --feats_type 0 --hidden_dim 1024 --num_layers 6 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset SAN/Alicoco --vc 0 --homo --use_residual
 ```
+---
+
+### 📦 Data 
+
+We provide preprocessed **heterogeneous graph datasets** for all experiments in this study.  
+
+You can download them directly from the link below: ⬇️  
+
+<p align="center">
+  🔗 <a href="https://drive.google.com/file/d/1kMK4dceUsg61ubruqw-XitT3tIcYpZT6/view?usp=drive_link"><b>Download from Google Drive</b></a>
+</p>
+
+After downloading, please unzip the file and place the extracted contents into the `data/` directory before running any commands. 
+
+---
+
+🪄 *Tip:*  
+If you encounter permission or quota issues on Google Drive, try logging into your Google account or using `wget` with the shared link.  
+
+*If you still cannot access the datasets after trying all possible methods,* please contact **[yangxiao.cs@gmail.com](mailto:yangxiao.cs@gmail.com)** I’ll be happy to assist you personally. 😊
