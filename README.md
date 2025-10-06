@@ -35,7 +35,7 @@ We summarize the overall reasoning process of this study in three causal steps:
 ---
 
 
-### 🚀 Run
+### 🚀 RGCN (Heterogeneous) Runs
 
 To reproduce the benchmark results, run the following commands:
 
@@ -81,11 +81,6 @@ python run.py --feats_type 3 --hidden_dim 64 --num_layers 6 --lr 0.001 --feat_dr
 ---
 
 ### 🧩 GCN (Homogeneous) Runs
-
-To examine whether HGNNs’ improvements arise from architecture or from heterogeneous information,  
-we also reproduce all models on their **homogeneous graph counterparts** by enabling the `--homo` flag.  
-These runs serve as **control experiments** in our causal analysis, allowing a fair comparison between  
-heterogeneous and homogeneous settings under identical hyperparameter configurations.
 
 You can reproduce the homogeneous baselines with the following commands:
 ```bash
