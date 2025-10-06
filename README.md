@@ -26,4 +26,14 @@ making node classes more distinguishable.
 
 ---
 
-📦 **Repository Structure**
+### 📜 Framework Overview
+
+We summarize the overall reasoning process of this study in three causal steps:  
+
+1️⃣ *Is their power from model sophistication?*  
+2️⃣ *Is their power from heterogeneous structure?*  
+3️⃣ *What factors explain the advantage of heterogeneous graphs?*  
+
+<p align="center">
+  <img src="./overview.jpg" alt="Causal Framework Overview" width="720">
+</p>
