@@ -15,7 +15,7 @@ If you encounter permission or quota issues on Google Drive,
 try downloading after logging into your Google account or using `wget` with the shared link.  
 
 💌 *If you still cannot access the datasets after trying all possible methods,*  
-feel free to email **[yangxiao.cs@gmail.com](mailto:yangxiao.cs@gmail.com)** —  
+feel free to email **[yangxiao.cs@gmail.com](mailto:yangxiao.cs@gmail.com)**  
 I’ll be happy to assist you personally. 😊  
 
 Happy experimenting! 🎉  
