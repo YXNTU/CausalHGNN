@@ -6,7 +6,7 @@
 
 ---
 
-### 🧠 Abstract (shortened)
+### 🧠 Abstract
 
 Heterogeneous Graph Neural Networks (HGNNs) extend traditional GNNs by integrating multiple relation types and semantic information. However, whether HGNNs are **intrinsically effective** remains unclear, as most studies assume rather than establish their causal validity. This work disentangles the effects of **model architecture** and **heterogeneous information** through large-scale reproduction across 21 datasets and 20 baselines. We introduce a **causal effect estimation framework** that evaluates candidate factors under factual and counterfactual analyses, with robustness validated via minimal sufficient adjustment sets, cross-method consistency, and sensitivity analyses.  
 Our findings reveal that architectural complexity has **no causal impact** on performance, while heterogeneous information improves accuracy by enhancing **homophily** and **local–global distribution discrepancy**, making node classes more distinguishable.  
@@ -80,7 +80,7 @@ python run.py --feats_type 3 --hidden_dim 64 --num_layers 6 --lr 0.001 --feat_dr
 
 ---
 
-### 🧩 GCN (Homogeneous) Runs
+### 🚀  GCN (Homogeneous) Runs
 
 You can reproduce the homogeneous baselines with the following commands:
 ```bash
