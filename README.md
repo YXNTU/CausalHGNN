@@ -76,6 +76,7 @@ python run.py --feats_type 0 --hidden_dim 64 --num_layers 1 --lr 0.001 --feat_dr
 # HGB
 python run.py --feats_type 0 --hidden_dim 192 --num_layers 1 --lr 0.001 --feat_drop 0.1 --edge_drop 0. --weight_decay 0.0001 --dataset HGB/ACM --vc 0 --batchnorm
 python run.py --feats_type 3 --hidden_dim 64 --num_layers 6 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset HGB/DBLP --vc 0 --use_residual --batchnorm
+```
 
 ---
 
@@ -128,3 +129,4 @@ python run.py --feats_type 0 --hidden_dim 64 --num_layers 3 --lr 0.001 --feat_dr
 
 # SAN
 python run.py --feats_type 0 --hidden_dim 1024 --num_layers 6 --lr 0.001 --feat_drop 0. --edge_drop 0. --weight_decay 0. --dataset SAN/Alicoco --vc 0 --homo --use_residual
+```
