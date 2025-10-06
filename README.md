@@ -1,5 +1,4 @@
 # 🧩 Are Heterogeneous Graph Neural Networks Truly Effective?  
-### A Causal Perspective
 
 > 📄 *Official implementation of our paper*  
 > **"Are Heterogeneous Graph Neural Networks Truly Effective? A Causal Perspective"**  
