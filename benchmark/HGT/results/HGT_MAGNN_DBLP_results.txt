@@ -1,0 +1,12 @@
+=== HGT Results ===
+Dataset: MAGNN/DBLP
+Hyperparameters (fixed):
+  hidden_dim=64, heads=8, layers=2, norm=True
+  dropout=0.4, lr=0.001, weight_decay=0.0001
+  epochs=1000, patience=40, repeat=1
+
+Run 0: Macro-F1=0.9038, Micro-F1=0.9134
+
+Average Macro-F1: 0.9038
+Average Micro-F1: 0.9134
+Generated on 2025-10-08 19:50:35
