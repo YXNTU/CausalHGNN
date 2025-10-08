@@ -1,0 +1,12 @@
+=== Final Results ===
+Meta-paths: [['0'], ['1']]
+Hyperparams: hidden_dim=64, heads=8, layers=1, dropout=0.6, lr=0.005, wd=0.0005, epochs=200, patience=30, repeat=5
+
+Run 0: Macro=0.8728, Micro=0.8725
+Run 1: Macro=0.8517, Micro=0.8522
+Run 2: Macro=0.8161, Micro=0.8179
+Run 3: Macro=0.8703, Micro=0.8701
+Run 4: Macro=0.8489, Micro=0.8485
+
+Avg Macro-F1: 0.8520
+Avg Micro-F1: 0.8522
