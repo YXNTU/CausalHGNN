@@ -145,3 +145,23 @@ After downloading, please unzip the file and place the extracted contents into t
 If you encounter permission or quota issues on Google Drive, try logging into your Google account or using `wget` with the shared link.  
 
 *If you still cannot access the datasets after trying all possible methods,* please contact **[yangxiao.cs@gmail.com](mailto:yangxiao.cs@gmail.com)** I’ll be happy to assist you personally. 😊
+
+## 📖 Citation
+
+If you find our work useful, please consider citing our papers:
+
+```bibtex
+@misc{yang2025heterogeneousgraphneuralnetworks,
+      title={Are Heterogeneous Graph Neural Networks Truly Effective? A Causal Perspective}, 
+      author={Xiao Yang and Xuejiao Zhao and Zhiqi Shen},
+      year={2025},
+      eprint={2510.05750},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.05750}, 
+}
+```
+
+## License
+
+This project is released under the MIT License. Our models and codes must only be used for research purposes.
