@@ -1,0 +1,17 @@
+=== HAN Reproduction Results ===
+Dataset: ACM
+Meta-paths: [['0'], ['1']]
+Hyperparameters:
+  hidden_dim=64, heads=8, layers=1
+  dropout=0.6, lr=0.005, weight_decay=0.0005
+  epochs=200, patience=30, repeat=5
+
+Run 0: Macro-F1=0.8766, Micro-F1=0.8767
+Run 1: Macro-F1=0.8501, Micro-F1=0.8513
+Run 2: Macro-F1=0.8506, Micro-F1=0.8522
+Run 3: Macro-F1=0.8558, Micro-F1=0.8569
+Run 4: Macro-F1=0.8460, Micro-F1=0.8480
+
+Average Macro-F1: 0.8558
+Average Micro-F1: 0.8570
+Generated on 2025-10-08 17:40:00
